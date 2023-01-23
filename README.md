@@ -3,6 +3,10 @@
 
 <h4>Fork here: <a href="https://replit.com/@saikidesu-web/SELFPINGER-SAIKIDESU-v4?v=1"> https://replit.com/@saikidesu-web/SELFPINGER-SAIKIDESU-v4?v=1</a></h4>
 
+or
+
+[![Fork to Replit](https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg)](https://replit.com/github/mraikero-01/SELFPINGER-SAIKIDESU-BETA)
+
 <h2>Run to your replit</h2>
 
 ```
