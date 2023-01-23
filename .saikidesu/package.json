@@ -1,7 +1,7 @@
 {
-  "name": "selfpinger-saikidesu-v3",
+  "name": "selfpinger-saikidesu",
   "version": "1.1.4",
-  "description": "A simple self maid pinger (uptimer) with a simple method by SaikiDesu.",
+  "description": "A simple self made pinger with a simple method by SaikiDesu.",
   "main": "secre.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -23,10 +23,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mraikero-01/selfpinger-saikidesu-v3.git"
+    "url": "git+https://github.com/mraikero-01/SELFPINGER-SAIKIDESU-BETA.git"
   },
   "bugs": {
-    "url": "https://github.com/mraikero-01/selfpinger-saikidesu-v3/issues"
+    "url": "https://github.com/mraikero-01/SELFPINGER-SAIKIDESU-BETA/issues"
   },
-  "homepage": "https://github.com/mraikero-01/selfpinger-saikidesu-v3#readme"
+  "homepage": "https://github.com/mraikero-01/SELFPINGER-SAIKIDESU-BETA#readme"
 }
