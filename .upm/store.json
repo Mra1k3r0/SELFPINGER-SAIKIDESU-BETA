@@ -1,0 +1,1 @@
+{"version":2,"languages":{"nodejs-npm":{"specfileHash":"9d1a5137e221d5df4f09f891b1f46735","lockfileHash":"73d5d0d9f5659c936a5e399c6d555e63","guessedImports":["koa","koa-router","koa-json","chalk","snekfetch","aws-serverless-koa","axios"],"guessedImportsHash":"cbc743ae300dea692baa5076d60a9c52"}}}

@@ -1,0 +1,34 @@
+{
+  "name": "selfpinger-saikidesu-v3",
+  "version": "1.3.1",
+  "description": "A simple self maid pinger (uptimer) with a simple method by SaikiDesu.",
+  "main": "secre.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon secre.js"
+  },
+  "keywords": [],
+  "author": "SaikiDesu",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^18.0.6",
+    "aws-serverless-koa": "^1.0.2",
+    "axios": "^1.2.3",
+    "chalk": "^4.1.2",
+    "fs": "^0.0.1-security",
+    "koa": "^2.14.1",
+    "koa-json": "^2.0.2",
+    "koa-router": "^12.0.0",
+    "node-fetch": "^3.2.6",
+    "nodemon": "^2.0.20",
+    "snekfetch": "^4.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mraikero-01/selfpinger-saikidesu-v3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mraikero-01/selfpinger-saikidesu-v3/issues"
+  },
+  "homepage": "https://github.com/mraikero-01/selfpinger-saikidesu-v3#readme"
+}
