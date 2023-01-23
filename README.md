@@ -7,7 +7,7 @@ or
 
 [![Fork to Replit](https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg)](https://replit.com/github/mraikero-01/SELFPINGER-SAIKIDESU-BETA)
 
-<h2>Run to your replit</h2>
+<h2>Then finally</h2>
 
 ```
 npm install
