@@ -1,7 +1,7 @@
 {
   "name": "selfpinger-saikidesu-beta",
   "version": "1.3.1",
-  "description": "A simple self maid pinger (uptimer) with a simple method by SaikiDesu.",
+  "description": "A simple self made pinger with a simple method by SaikiDesu.",
   "main": "secre.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
