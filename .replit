@@ -1,5 +1,5 @@
 language = "nodejs"
 run = "npm start"
 
-hidden = [".config", "package-lock.json", ".saikidesu", "log.js"]
+hidden = [".config", "package-lock.json", "log.js"]
 
