@@ -234,8 +234,8 @@ function selfPing() {
     let myurl = "";
     if (process.env.REPL_ID) {
         myurl = `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co/`;
-    } else if (CODESANDBOX_HOST) {
-        myurl = `https://${CODESANDBOX_HOST}`;
+    } else if (process.env.CODESANDBOX_HOST) {
+        myurl = `https://${process.env.CODESANDBOX_HOST}`;
     } else {
         myurl = `http://localhost:${PORT}`;
     }

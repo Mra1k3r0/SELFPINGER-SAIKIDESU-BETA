@@ -2,3 +2,6 @@ node_modules/
 package-lock.json
 .cache
 .lesson
+.devcontainer
+.upm
+.codesandbox
