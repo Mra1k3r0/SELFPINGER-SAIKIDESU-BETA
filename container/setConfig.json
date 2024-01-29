@@ -1,11 +1,5 @@
 {
     "interval": 1000,
     "type": "json",
-    "links": [
-        "https://selfpinger-saikidesu.saikidesu-web.repl.co",
-        "https://zuck-bot-saikidesu-project.edu-saikidesu.repl.co",
-        "https://lavalink.edu-saikidesu.repl.co",
-        "https://telebot-uptime.edu-saikidesu.repl.co",
-        "https://teltest.saikidesu-web.repl.co/"
-    ]
+    "links": ["https://m3qkwd-8080.csb.app", "https://n5vh7c-3009.csb.app", "https://zuck-bot-main-fplki.run.goorm.site/"]
 }

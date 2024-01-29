@@ -1,6 +1,6 @@
 {
   "name": "selfpinger-saikidesu-beta",
-  "version": "1.3.3",
+  "version": "1.3.4-11",
   "description": "A simple self made pinger with a simple method by SaikiDesu.",
   "main": "secre.js",
   "scripts": {
@@ -28,5 +28,6 @@
   "bugs": {
     "url": "https://github.com/mraikero-01/SELFPINGER-SAIKIDESU-BETA/issues"
   },
-  "homepage": "https://github.com/mraikero-01/SELFPINGER-SAIKIDESU-BETA#readme"
+  "homepage": "https://github.com/mraikero-01/SELFPINGER-SAIKIDESU-BETA#readme",
+  "devDependencies": {}
 }

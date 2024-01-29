@@ -163,15 +163,36 @@ if (config.type == "json") {
     process.exit(1);
 }
 
+const randomChromeVersion = () => {
+    const majorVersion = Math.floor(Math.random() * 121);
+    const minorVersion = Math.floor(Math.random() * 10);
+    const buildVersion = Math.floor(Math.random() * 7000);
+    const patchVersion = Math.floor(Math.random() * 300);
+    return `${majorVersion}.${minorVersion}.${buildVersion}.${patchVersion}`;
+};
+
 function upTime1() {
     fs.readFile(__dirname + "/container/setConfig.json", "utf8", (err, data) => {
         if (err) return console.log(err.message);
 
         let allLinks = JSON.parse(data).links ? JSON.parse(data).links : configs.links; // process.env.URL.split(", ");
+        let browserVersion = randomChromeVersion();
 
         allLinks.some((link) => {
+            let headers = {
+                Host: link.replace(/^https?:\/\//, "").split("/")[0],
+                "User-Agent": `Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu 18.04 CHromium/${browserVersion} Chrome/${browserVersion} Safari/537.36`,
+                Accept: "application/json",
+                "Content-Type": "application/json",
+                "X-Requested-With": "XMLHttpRequest",
+                "Cache-Control": "no-cache",
+                Pragma: "no-cache",
+                "Accept-Language": "en-US",
+                "X-Forwarded-For": "clientIPAddress",
+            };
+
             axios
-                .get(link)
+                .get(link, { headers })
                 .then((res) => {
                     logger(`${link}`, ` is working`, "ok");
                     return console.log(chalk.hex("00CCCC").bold(`Status:`), chalk.hex("00CC00")(res.status));
@@ -210,7 +231,14 @@ function upTime2() {
 setInterval(selfPing, 1800000);
 
 function selfPing() {
-    let myurl = `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co/`;
+    let myurl = "";
+    if (process.env.REPL_ID) {
+        myurl = `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co/`;
+    } else if (CODESANDBOX_HOST) {
+        myurl = `https://${CODESANDBOX_HOST}`;
+    } else {
+        myurl = `http://localhost:${PORT}`;
+    }
     get(myurl)
         .then((respo) => {
             return respo;
