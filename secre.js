@@ -1,6 +1,6 @@
 // You can add more than 100 urls on setConfig.json, but it's not advisable :>
-// Made by SaikiDesu (Mr.Aik3ro)
-// https://github.com/mraikero-01
+// Made by SaikiDesu (Mra1k3r0)
+// https://github.com/Mra1k3r0
 
 const fs = require("fs");
 const { get } = require("snekfetch");
@@ -31,7 +31,7 @@ app.use(KoaJSON());
 router.get("/", async (ctx, next) => {
     const start = Date.now();
     await next();
-    let data2 = ["SelfPinger by SaikiDesu, enjoy!", "Powered by KoaJs", "Follow me on fb: https://www.facebook.com/saikidesu11", "Follow my github: https://github.com/mraikero-01", "Credits to all facebook and dc bot developers"];
+    let data2 = ["SelfPinger by SaikiDesu, enjoy!", "Powered by KoaJs", "Follow me on fb: https://www.facebook.com/saikidesu11", "Follow my github: https://github.com/Mra1k3r0", "Credits to all facebook and dc bot developers"];
     let mess = data2[Math.floor(Math.random() * data2.length)];
     const rt = ctx.response.get("X-Response-Time");
     console.log(chalk.hex(col)(`--->heartbeat<---\n↳ ${ctx.method} ${ctx.url} - ${rt}`));
@@ -180,15 +180,17 @@ function upTime1() {
 
         allLinks.some((link) => {
             let headers = {
+                "Transfer-Encoding": "chunked",
+                Connection: "keep-alive",
                 Host: link.replace(/^https?:\/\//, "").split("/")[0],
                 "User-Agent": `Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu 18.04 CHromium/${browserVersion} Chrome/${browserVersion} Safari/537.36`,
                 Accept: "application/json",
-                "Content-Type": "application/json",
-                "X-Requested-With": "XMLHttpRequest",
+                "Content-Type": "application/json; charset=UTF-8",
+                //   "X-Requested-With": "XMLHttpRequest",
                 "Cache-Control": "no-cache",
                 Pragma: "no-cache",
                 "Accept-Language": "en-US",
-                "X-Forwarded-For": "clientIPAddress",
+                //  "X-Forwarded-For": "clientIPAddress",
             };
 
             axios
@@ -210,10 +212,25 @@ function upTime1() {
 
 function upTime2() {
     let allLinks = configs.links; // process.env.URL.split(", ");
+    let browserVersion = randomChromeVersion();
 
     allLinks.some((link) => {
+        let headers = {
+            "Transfer-Encoding": "chunked",
+            Connection: "keep-alive",
+            Host: link.replace(/^https?:\/\//, "").split("/")[0],
+            "User-Agent": `Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu 18.04 CHromium/${browserVersion} Chrome/${browserVersion} Safari/537.36`,
+            Accept: "application/json",
+            "Content-Type": "application/json; charset=UTF-8",
+            //   "X-Requested-With": "XMLHttpRequest",
+            "Cache-Control": "no-cache",
+            Pragma: "no-cache",
+            "Accept-Language": "en-US",
+            //  "X-Forwarded-For": "clientIPAddress",
+        };
+
         axios
-            .get(link)
+            .get(link, { headers })
             .then((res) => {
                 logger(`${link}`, ` is working`, "ok");
                 return console.log(chalk.hex("00CCCC").bold(`Status:`), chalk.hex("00CC00")(res.status));
