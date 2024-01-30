@@ -1,33 +1,33 @@
 {
-  "name": "selfpinger-saikidesu-beta",
-  "version": "1.3.4-11",
-  "description": "A simple self made pinger with a simple method by SaikiDesu.",
-  "main": "secre.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon secre.js"
-  },
-  "keywords": [],
-  "author": "SaikiDesu",
-  "license": "MIT",
-  "dependencies": {
-    "aws-serverless-koa": "^1.0.2",
-    "axios": "^1.2.4",
-    "chalk": "^4.1.2",
-    "koa": "^2.14.1",
-    "koa-body": "^6.0.1",
-    "koa-json": "^2.0.2",
-    "koa-router": "^12.0.0",
-    "nodemon": "^3.0.0",
-    "snekfetch": "^4.0.4"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mraikero-01/SELFPINGER-SAIKIDESU-BETA.git"
-  },
-  "bugs": {
-    "url": "https://github.com/mraikero-01/SELFPINGER-SAIKIDESU-BETA/issues"
-  },
-  "homepage": "https://github.com/mraikero-01/SELFPINGER-SAIKIDESU-BETA#readme",
-  "devDependencies": {}
+    "name": "selfpinger-saikidesu-beta",
+    "version": "1.3.4-17",
+    "description": "A simple self made pinger with a simple method by SaikiDesu.",
+    "main": "secre.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon secre.js"
+    },
+    "keywords": [],
+    "author": "SaikiDesu",
+    "license": "MIT",
+    "dependencies": {
+        "aws-serverless-koa": "^1.0.2",
+        "axios": "^1.2.4",
+        "chalk": "^4.1.2",
+        "koa": "^2.14.1",
+        "koa-body": "^6.0.1",
+        "koa-json": "^2.0.2",
+        "koa-router": "^12.0.0",
+        "nodemon": "^3.0.0",
+        "snekfetch": "^4.0.4"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Mra1k3r0/SELFPINGER-SAIKIDESU-BETA.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Mra1k3r0/SELFPINGER-SAIKIDESU-BETA/issues"
+    },
+    "homepage": "https://github.com/Mra1k3r0/SELFPINGER-SAIKIDESU-BETA#readme",
+    "devDependencies": {}
 }
