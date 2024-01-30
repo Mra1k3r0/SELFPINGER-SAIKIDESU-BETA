@@ -23,6 +23,7 @@ const router = new KoaRouter();
 app.proxy = true;
 
 const PORT = process.env.PORT || 3040 || 8080;
+
 console.log("Made by SaikiDesu");
 
 app.use(koaBody());
@@ -250,11 +251,11 @@ setInterval(selfPing, 1800000);
 function selfPing() {
     let myurl = "";
     if (process.env.REPL_ID) {
-        myurl = `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co/`;
+        myurl = "https://fb3c4ba9-780d-48ae-9f4c-b4c83d4666c3-00-22pc1d12nvqoe.janeway.replit.dev/" || `http://127.0.0.1:${PORT}`; //`https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co/` 
     } else if (process.env.CODESANDBOX_HOST) {
         myurl = `https://${process.env.CODESANDBOX_HOST}`;
     } else {
-        myurl = `http://localhost:${PORT}`;
+        myurl = `http://127.0.0.1:${PORT}`;
     }
     get(myurl)
         .then((respo) => {
